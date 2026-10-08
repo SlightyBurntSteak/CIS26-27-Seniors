@@ -180,7 +180,7 @@ main h2 {
 .tagline {
     color: var(--river-dark);
     font-weight: 600;
-    margin: 1.25rem;
+    
 }
 
 .about-text p {
@@ -201,4 +201,28 @@ main h2 {
 
 .button:hover {
     background-color: var(--river-dark);
+}
+
+/* --------------------- 5. SKILLS (FLEXBOX with wrap) --------------------- */
+.skills {
+    border-top: 1px solid var(--line);
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 0.75rem;
+}
+
+.skills-list li {
+    padding: 0.5rem 1.1rem;
+    background-color: var(--white);
+    border: 3px dotted var(--ink);
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.skills-list li:hover {
+    border: 3px dotted var(--ink);
 }
